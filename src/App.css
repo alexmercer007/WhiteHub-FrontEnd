@@ -1,0 +1,13 @@
+
+@import "tailwindcss";
+
+html {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+}
+
+body{
+    background-color: rgb(35, 35, 45);
+    
+}
