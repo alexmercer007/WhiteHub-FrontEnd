@@ -1,0 +1,433 @@
+
+/* 
+    Created on : 13 oct 2025, 10:53:00 a. m.
+    Author     : alejadro reyes castillo
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@media( min-width: 375px ) and (max-width: 412px) {
+    
+  .div__header--main {
+   background-color: rgba(26, 24, 24, 1);
+   height: 65px;
+   width: auto;
+   position: relative;
+   display: flex;   
+   align-items: center;     
+}
+
+header {
+  position: relative;
+  display: flex;
+  width: 100px;
+  height: 50px;
+  color: white;
+  background-color: rgba(111, 111, 237, 1); 
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;  
+  justify-content: center; 
+  align-items: center;  
+}
+
+.page_search {
+    display: flex;
+    height: 50px;
+    width: 120px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.button__settings {
+    display: flex;
+    height: 50px;
+    width: 50px;       
+    border-radius: 30px;
+    justify-items: center;
+    align-items: center;
+}
+
+.button__settings {
+    
+    
+}
+
+.button__settings {
+    
+    
+}
+
+.img__settings {
+    height: 50px;
+    width: 50px;    
+    border-radius: 30px;
+}
+
+
+.button__notification {
+    height: 50px;
+    width: 50px;    
+    border-radius: 30px;
+}
+
+.button__notification {
+    
+}
+
+.button__notification {
+    
+}
+
+.img__notification {
+    height: 50px;
+    width: 50px;    
+    border-radius: 30px; 
+}
+
+
+.button__message {
+    height: 50px;
+    width: 50px;    
+    border-radius: 30px;
+}
+
+.button__message {
+    
+}
+
+.button__message {
+    
+}
+
+.img__message {
+    height: 50px;
+    width: 50px;    
+    border-radius: 30px;
+}
+
+
+.button__user {
+    height: 50px;
+    width: 50px;    
+    border-radius: 30px;
+}
+
+.button__user {
+    
+}
+
+.button__user {
+    
+}
+
+.img__user {
+    height: 50px;
+    width: 50px;    
+    border-radius: 30px;
+}
+}
+
+
+/* Laptop 14 pg */
+@media( min-width: 1600px ){
+
+ .div__header--main {
+   background-color: rgba(26, 24, 24, 1);
+   height: 50px;
+   width: auto;
+   position: relative;
+   display: flex;   
+   align-items: center;     
+}
+
+header {
+  position: relative;
+  display: flex;
+  width: 100px;
+  height: 50px;
+  color: white;
+  background-color: rgba(111, 111, 237, 1); 
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-right: 250px;  
+  justify-content: center; 
+  align-items: center;  
+}  
+
+.div__search--main {
+    position: relative;
+    display: flex;
+    width: 50%;
+    border: 2px solid gold;
+    justify-content: center;
+    align-items: center;
+}
+
+.page_search {
+    display: flex;
+    height: 50px;
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.div__button {
+    
+    display: flex;
+    width: 25%;
+    border: 2px solid gold;
+}
+
+.button__settings {
+    background-color: white;
+    display: flex;
+    height: 50px;
+    width: 50px;       
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button__settings {
+    
+    
+}
+
+.button__settings {
+    
+    
+}
+
+.img__settings {    
+    background-color: white;
+    display: block;  
+    height: 40px;
+    width: 40px;    
+    border-radius: 30px;
+    object-fit: contain;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.button__notification {
+    background-color: white;
+    display: flex;
+    height: 50px;
+    width: 50px;       
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button__notification {
+    
+}
+
+.button__notification {
+    
+}
+
+.img__notification {
+    background-color: white;
+    display: block;  
+    height: 40px;
+    width: 40px;    
+    border-radius: 30px; 
+    object-fit: contain;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.button__message {
+    background-color: white;
+    display: flex;
+    height: 50px;
+    width: 50px;       
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button__message {
+    
+}
+
+.button__message {
+    
+}
+
+.img__message {
+    background-color: white;
+    display: block;  
+    height: 30px;
+    width: 30px;    
+    border-radius: 30px;
+    object-fit: contain;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.button__user {
+    display: flex;
+    height: 50px;
+    width: 50px;       
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button__user {
+    
+}
+
+.button__user {
+    
+}
+
+.img__user {
+    display: block;  
+    height: 50px;
+    width: 50px;    
+    border-radius: 30px;
+    object-fit: contain;
+    visibility: visible;
+    opacity: 1;
+}
+    
+}
+
+@media( min-width: 1920px ){
+   
+ .div__header--main {
+   background-color: rgba(26, 24, 24, 1);
+   height: 50px;
+   width: auto;
+   position: relative;
+   display: flex;   
+   align-items: center;     
+}
+
+header {
+  position: relative;
+  display: flex;
+  width: 100px;
+  height: 50px;
+  color: white;
+  background-color: rgba(111, 111, 237, 1); 
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-left: 5vw;
+  margin-right: 25%;  
+  justify-content: center; 
+  align-items: center;  
+}  
+
+.page_search {
+    display: flex;
+    height: 50px;
+    width: 300px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+}
+    
+}
+
+@media( min-width: 2560px ){
+
+.div__header--main {
+   background-color: rgba(26, 24, 24, 1);
+   height: 50px;
+   width: auto;
+   position: relative;
+   display: flex;   
+   align-items: center;     
+}
+
+header {
+  position: relative;
+  display: flex;
+  width: 100px;
+  height: 50px;
+  color: white;
+  background-color: rgba(111, 111, 237, 1); 
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-left: 5vw;
+  margin-right: 25%;  
+  justify-content: center; 
+  align-items: center;  
+} 
+
+.page_search {
+    display: flex;
+    height: 50px;
+    width: 300px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+}
+    
+}
+
+@media( min-width: 3840px ){
+
+.div__header--main {
+   background-color: rgba(26, 24, 24, 1);
+   height: 50px;
+   width: auto;
+   position: relative;
+   display: flex;   
+   align-items: center;     
+}
+
+header {
+  position: relative;
+  display: flex;
+  width: 100px;
+  height: 50px;
+  color: white;
+  background-color: rgba(111, 111, 237, 1); 
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-left: 5vw;
+  margin-right: 25%;  
+  justify-content: center; 
+  align-items: center;  
+} 
+
+.page_search {
+    display: flex;
+    height: 50px;
+    width: 300px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+}
+
+
