@@ -4,11 +4,21 @@
     Author     : alejadro reyes castillo
 */
 
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html, body {
+    height: 100vh;
+  
+    overflow-x: hidden;
+}
+
+/* ---------------------------------------------------------------------------- Cell ---------------------------------------------------------------------------------------*/
 
 @media( min-width: 375px ) and (max-width: 412px) {
     
-  .div__header--main {
+.div__header--main {
    background-color: rgba(26, 24, 24, 1);
    height: 65px;
    width: auto;
@@ -20,8 +30,9 @@
 header {
   position: relative;
   display: flex;
-  width: 100px;
-  height: 50px;
+  font-size: 12px;
+  width: 70px;
+  height: 35px;
   color: white;
   background-color: rgba(111, 111, 237, 1); 
   border: 2px solid white;
@@ -32,148 +43,18 @@ header {
   align-items: center;  
 }
 
-.page_search {
-    display: flex;
-    height: 50px;
-    width: 120px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 2px solid white;
-    border-radius: 10px;
-    padding: 5px;
-}
-
-.button__settings {
-    display: flex;
-    height: 50px;
-    width: 50px;       
-    border-radius: 30px;
-    justify-items: center;
-    align-items: center;
-}
-
-.button__settings {
-    
-    
-}
-
-.button__settings {
-    
-    
-}
-
-.img__settings {
-    height: 50px;
-    width: 50px;    
-    border-radius: 30px;
-}
-
-
-.button__notification {
-    height: 50px;
-    width: 50px;    
-    border-radius: 30px;
-}
-
-.button__notification {
-    
-}
-
-.button__notification {
-    
-}
-
-.img__notification {
-    height: 50px;
-    width: 50px;    
-    border-radius: 30px; 
-}
-
-
-.button__message {
-    height: 50px;
-    width: 50px;    
-    border-radius: 30px;
-}
-
-.button__message {
-    
-}
-
-.button__message {
-    
-}
-
-.img__message {
-    height: 50px;
-    width: 50px;    
-    border-radius: 30px;
-}
-
-
-.button__user {
-    height: 50px;
-    width: 50px;    
-    border-radius: 30px;
-}
-
-.button__user {
-    
-}
-
-.button__user {
-    
-}
-
-.img__user {
-    height: 50px;
-    width: 50px;    
-    border-radius: 30px;
-}
-}
-
-
-/* Laptop 14 pg */
-@media( min-width: 1600px ){
-
- .div__header--main {
-   background-color: rgba(26, 24, 24, 1);
-   height: 50px;
-   width: auto;
-   position: relative;
-   display: flex;   
-   align-items: center;     
-}
-
-header {
-  position: relative;
-  display: flex;
-  width: 100px;
-  height: 50px;
-  color: white;
-  background-color: rgba(111, 111, 237, 1); 
-  border: 2px solid white;
-  border-radius: 10px;
-  margin-left: 50px;
-  margin-right: 250px;  
-  justify-content: center; 
-  align-items: center;  
-}  
-
 .div__search--main {
     position: relative;
     display: flex;
-    width: 50%;
-    border: 2px solid gold;
+    width: 40%;
     justify-content: center;
     align-items: center;
 }
 
 .page_search {
     display: flex;
-    height: 50px;
-    width: 80%;
+    height: 35px;
+    width: 145px;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     background-color: rgba(255, 255, 255, 0.5);
@@ -185,216 +66,556 @@ header {
 .div__button {
     
     display: flex;
-    width: 25%;
-    border: 2px solid gold;
+    width: 40%;
 }
 
 .button__settings {
-    background-color: white;
     display: flex;
-    height: 50px;
-    width: 50px;       
-    border-radius: 30px;
-    justify-content: center;
-    align-items: center;
+    height: 30px;
+    width: 30px;       
+    border-radius: 50%; 
+    margin-left: 5px;
+    margin-right: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.5s ease;
 }
 
-.button__settings {
-    
-    
+.button__settings:hover {
+   transform: scale(0.8);
 }
 
-.button__settings {
-    
-    
+.button__settings:active {
+  transform: scale(1.1);      
 }
-
-.img__settings {    
-    background-color: white;
-    display: block;  
-    height: 40px;
-    width: 40px;    
-    border-radius: 30px;
+.img__settings {
     object-fit: contain;
-    visibility: visible;
-    opacity: 1;
+    height: 20px;
+    width: 20px;       
 }
 
 
 .button__notification {
-    background-color: white;
-    display: flex;
-    height: 50px;
-    width: 50px;       
+    height: 30px;
+    width: 30px;    
     border-radius: 30px;
     justify-content: center;
     align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
 }
 
-.button__notification {
-    
+.button__notification:hover {
+    transform: scale(0.8);
 }
 
-.button__notification {
-    
+.button__notification:active {
+    transform: scale(1.1); 
 }
 
 .img__notification {
-    background-color: white;
-    display: block;  
+    height: 30px;
+    width: 30px;    
+    border-radius: 30px; 
+    object-fit: contain;
+}
+
+
+.button__message {
+    height: 30px;
+    width: 30px;    
+    border-radius: 30px;
+    justify-items: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.button__message:hover {
+    transform: scale(0.8);
+}
+
+.button__message:active { 
+    transform: scale(1.1); 
+}
+
+.img__message {
+    height: 25px;
+    width: 25px;   
+    object-fit: contain;
+}
+
+
+.button__user {
+    height: 30px;
+    width: 30px;    
+    border-radius: 30px;
+    justify-items: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.button__user:hover {
+    transform: scale(0.8);
+}
+
+.button__user:active {
+    transform: scale(1.1); 
+}
+
+.img__user {
+    height: 20px;
+    width: 20px;    
+    object-fit: contain;
+}
+}
+
+
+/* ----------------------------------------------------------------------------Laptop 14 inch ---------------------------------------------------------------------------------------*/
+
+@media( min-width: 1600px ){
+
+ .div__header--main {
+   background-color: rgba(26, 24, 24, 1);
+   position:fixed;
+   height: 80px;
+   width: 99vw;
+   display: flex;   
+   align-items: center; 
+   z-index: 100;   
+}
+
+header {
+  position: relative;
+  display: flex;
+  font-size: 1.3rem;
+  width: 180px;
+  height: 50px;
+  color: white;
+  background-color: rgba(111, 111, 237, 1); 
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-right: 16%;  
+  justify-content: center; 
+  align-items: center;  
+}
+
+.div__search--main {
+    position: relative;
+    display: flex;
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.page_search {
+    color: white;
+    display: flex;
+    height: 45px;
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.div__button {
+    
+    display: flex;
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.button__settings {
+    display: flex;
+    height: 40px;
+    width: 40px;       
+    border-radius: 50%; 
+    margin-left: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.button__settings:hover {
+   transform: scale(0.8);
+}
+
+.button__settings:active {
+  transform: scale(1.1);      
+}
+.img__settings {
+    object-fit: contain;
+    height: 20px;
+    width: 20px;       
+}
+
+
+.button__notification {
+    height: 40px;
+    width: 40px;    
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.button__notification:hover {
+    transform: scale(0.8);
+}
+
+.button__notification:active {
+    transform: scale(1.1); 
+}
+
+.img__notification {
     height: 40px;
     width: 40px;    
     border-radius: 30px; 
     object-fit: contain;
-    visibility: visible;
-    opacity: 1;
 }
 
 
 .button__message {
-    background-color: white;
-    display: flex;
-    height: 50px;
-    width: 50px;       
+    height: 40px;
+    width: 40px;    
     border-radius: 30px;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
 }
 
-.button__message {
-    
+.button__message:hover {
+    transform: scale(0.8);
 }
 
-.button__message {
-    
+.button__message:active { 
+    transform: scale(1.1); 
 }
 
 .img__message {
-    background-color: white;
-    display: block;  
     height: 30px;
-    width: 30px;    
-    border-radius: 30px;
+    width: 30px;   
     object-fit: contain;
-    visibility: visible;
-    opacity: 1;
 }
 
 
 .button__user {
-    display: flex;
-    height: 50px;
-    width: 50px;       
+    height: 40px;
+    width: 40px;    
     border-radius: 30px;
+    justify-items: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.button__user:hover {
+    transform: scale(0.8);
+}
+
+.button__user:active {
+    transform: scale(1.1); 
+}
+
+.img__user {
+    height: 40px;
+    width: 40px;    
+    object-fit: contain;
+}
+}
+
+
+/*--------------------------------------------------------------------------------- Div main -----------------------------------------------------------------------------------------*/
+
+.div__main--page {
+    position: relative;
+    display: flex;
+    justify-content: center;
+        
+} 
+
+.aside__right{
+     border: 2px solid red;
+     background-color: rgba(23, 20, 20, 1);
+     position: fixed;
+     width: 25%;
+     height: 100vh;
+     margin-top: 81px;
+     left: 0px;
+}
+
+main {
+    background-color: rgba(23, 20, 20, 1);
+    position: relative;
+    display: flex;
+    width: 48%;
+    border: 2px solid gold;
+    height: 100vh;
+    margin-top: 81px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.div__main--userState-file {
+    position: relative;
+    display: flex;
+    width: 99.5%;
+    height: 80px;
+    box-shadow: 2px 2px 0.5px 0.5px #6B6B6B;
+    align-items: center;
+}
+
+.button__user-file {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border: 2px solid whitesmoke;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-right: 10%;
+}
+
+.input__main--userState {
+    font-size: 1.2rem;
+    color: white;
+    position: relative;
+    display: flex;
+    width: 65%;
+    height: 50px;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid gold;
+    border-radius: 10px;
+}
+
+.div__main--file {
+    position: relative;
+     width: 99.5%;
+     height: 70px;
+     border: 2px solid red;
+     justify-content: center;
+     align-items: center;
+}
+
+.button__main--file
+
+.aside__left{
+    background-color: rgba(23, 20, 20, 1);
+     border: 2px solid red; 
+     position: fixed;
+     display: flex;
+     width: 25%;
+     height: 100vh;
+     justify-content: center;
+     margin-top: 81px;
+     left: 74%;
+}
+
+.div__userBox {
+    background: rgba(247, 247, 247, 1);
+    display: flex;
+    position: relative;
+    height: 70px;
+    width: 88%;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+
+/* ---------------------------------------------------------------------------- PC Monitor 21 inch ---------------------------------------------------------------------------------------*/
+
+@media( min-width: 1920px ){
+   
+.div__header--main {
+   background-color: rgba(26, 24, 24, 1);
+   height: 65px;
+   width: auto;
+   position: relative;
+   display: flex;   
+   align-items: center;     
+}
+
+header {
+  position: relative;
+  display: flex;
+  font-size: 12px;
+  width: 70px;
+  height: 35px;
+  color: white;
+  background-color: rgba(111, 111, 237, 1); 
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;  
+  justify-content: center; 
+  align-items: center;  
+}
+
+.div__search--main {
+    position: relative;
+    display: flex;
+    width: 40%;
     justify-content: center;
     align-items: center;
 }
 
-.button__user {
-    
+.page_search {
+    display: flex;
+    height: 35px;
+    width: 145px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
 }
 
-.button__user {
+.div__button {
     
+    display: flex;
+    width: 40%;
+}
+
+.button__settings {
+    display: flex;
+    height: 30px;
+    width: 30px;       
+    border-radius: 50%; 
+    margin-left: 5px;
+    margin-right: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.button__settings:hover {
+   transform: scale(0.8);
+}
+
+.button__settings:active {
+  transform: scale(1.1);      
+}
+.img__settings {
+    object-fit: contain;
+    height: 20px;
+    width: 20px;       
+}
+
+
+.button__notification {
+    height: 30px;
+    width: 30px;    
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.button__notification:hover {
+    transform: scale(0.8);
+}
+
+.button__notification:active {
+    transform: scale(1.1); 
+}
+
+.img__notification {
+    height: 30px;
+    width: 30px;    
+    border-radius: 30px; 
+    object-fit: contain;
+}
+
+
+.button__message {
+    height: 30px;
+    width: 30px;    
+    border-radius: 30px;
+    justify-items: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.button__message:hover {
+    transform: scale(0.8);
+}
+
+.button__message:active { 
+    transform: scale(1.1); 
+}
+
+.img__message {
+    height: 25px;
+    width: 25px;   
+    object-fit: contain;
+}
+
+
+.button__user {
+    height: 30px;
+    width: 30px;    
+    border-radius: 30px;
+    justify-items: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.button__user:hover {
+    transform: scale(0.8);
+}
+
+.button__user:active {
+    transform: scale(1.1); 
 }
 
 .img__user {
-    display: block;  
-    height: 50px;
-    width: 50px;    
-    border-radius: 30px;
+    height: 20px;
+    width: 20px;    
     object-fit: contain;
-    visibility: visible;
-    opacity: 1;
 }
-    
 }
 
-@media( min-width: 1920px ){
-   
- .div__header--main {
-   background-color: rgba(26, 24, 24, 1);
-   height: 50px;
-   width: auto;
-   position: relative;
-   display: flex;   
-   align-items: center;     
-}
 
-header {
-  position: relative;
-  display: flex;
-  width: 100px;
-  height: 50px;
-  color: white;
-  background-color: rgba(111, 111, 237, 1); 
-  border: 2px solid white;
-  border-radius: 10px;
-  margin-left: 5vw;
-  margin-right: 25%;  
-  justify-content: center; 
-  align-items: center;  
-}  
-
-.page_search {
-    display: flex;
-    height: 50px;
-    width: 300px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 2px solid white;
-    border-radius: 10px;
-    padding: 5px;
-}
-    
-}
-
-@media( min-width: 2560px ){
-
-.div__header--main {
-   background-color: rgba(26, 24, 24, 1);
-   height: 50px;
-   width: auto;
-   position: relative;
-   display: flex;   
-   align-items: center;     
-}
-
-header {
-  position: relative;
-  display: flex;
-  width: 100px;
-  height: 50px;
-  color: white;
-  background-color: rgba(111, 111, 237, 1); 
-  border: 2px solid white;
-  border-radius: 10px;
-  margin-left: 5vw;
-  margin-right: 25%;  
-  justify-content: center; 
-  align-items: center;  
-} 
-
-.page_search {
-    display: flex;
-    height: 50px;
-    width: 300px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 2px solid white;
-    border-radius: 10px;
-    padding: 5px;
-}
-    
-}
+/* ---------------------------------------------------------------------------- PC Monitor 32 inch ---------------------------------------------------------------------------------------*/
 
 @media( min-width: 3840px ){
 
 .div__header--main {
    background-color: rgba(26, 24, 24, 1);
-   height: 50px;
+   height: 65px;
    width: auto;
    position: relative;
    display: flex;   
@@ -404,28 +625,150 @@ header {
 header {
   position: relative;
   display: flex;
-  width: 100px;
-  height: 50px;
+  font-size: 12px;
+  width: 70px;
+  height: 35px;
   color: white;
   background-color: rgba(111, 111, 237, 1); 
   border: 2px solid white;
   border-radius: 10px;
-  margin-left: 5vw;
-  margin-right: 25%;  
+  margin-left: 10px;
+  margin-right: 10px;  
   justify-content: center; 
   align-items: center;  
-} 
+}
+
+.div__search--main {
+    position: relative;
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
 
 .page_search {
     display: flex;
-    height: 50px;
-    width: 300px;
+    height: 35px;
+    width: 145px;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     background-color: rgba(255, 255, 255, 0.5);
     border: 2px solid white;
     border-radius: 10px;
     padding: 5px;
+}
+
+.div__button {
+    
+    display: flex;
+    width: 40%;
+}
+
+.button__settings {
+    display: flex;
+    height: 30px;
+    width: 30px;       
+    border-radius: 50%; 
+    margin-left: 5px;
+    margin-right: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.button__settings:hover {
+   transform: scale(0.8);
+}
+
+.button__settings:active {
+  transform: scale(1.1);      
+}
+.img__settings {
+    object-fit: contain;
+    height: 20px;
+    width: 20px;       
+}
+
+
+.button__notification {
+    height: 30px;
+    width: 30px;    
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.button__notification:hover {
+    transform: scale(0.8);
+}
+
+.button__notification:active {
+    transform: scale(1.1); 
+}
+
+.img__notification {
+    height: 30px;
+    width: 30px;    
+    border-radius: 30px; 
+    object-fit: contain;
+}
+
+
+.button__message {
+    height: 30px;
+    width: 30px;    
+    border-radius: 30px;
+    justify-items: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.button__message:hover {
+    transform: scale(0.8);
+}
+
+.button__message:active { 
+    transform: scale(1.1); 
+}
+
+.img__message {
+    height: 25px;
+    width: 25px;   
+    object-fit: contain;
+}
+
+
+.button__user {
+    height: 30px;
+    width: 30px;    
+    border-radius: 30px;
+    justify-items: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.button__user:hover {
+    transform: scale(0.8);
+}
+
+.button__user:active {
+    transform: scale(1.1); 
+}
+
+.img__user {
+    height: 20px;
+    width: 20px;    
+    object-fit: contain;
 }
 
 }
