@@ -1,9 +1,9 @@
 
 import './App.css'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import LoginForm from './pages/login/LoginForm.jsx';
-import RegisterForm from './pages/login/RegisterForm.jsx';
-import PageFeed from './pages/user/PageFeed.jsx';
+import LoginForm from './pages/login/LoginForm';
+import RegisterForm from './pages/login/RegisterForm';
+import PageFeed from './pages/user/PageFeed';
 
 function App() {
   return (

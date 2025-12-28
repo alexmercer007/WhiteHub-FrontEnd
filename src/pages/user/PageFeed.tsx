@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, {useState} from "react";
 import feed from   "./../../style/PageFeed.module.css"
 
 import settingsIcon from './../image/settings.png';
@@ -7,32 +7,66 @@ import notificationIcon from './../image/notification.png';
 import chatIcon from './../image/messenger.png';
 import userIcon from './../image/default-user.png';
 
+import ButtonSetting from './componentsFeed/ButtonSetting.tsx';
+import ButtonNotification from './componentsFeed/ButtonNotification.tsx';
+import ButtonMessage from './componentsFeed/ButtonMessage.tsx';
+import ButtonUser from './componentsFeed/ButtonUser.tsx';
+
+
 function PageFeed(){
-    
+
+  const [openWindow, setOpenWindow] = useState({
+  settings: false,
+  notifications: false,
+  messages: false,
+  user: false,
+  extra: false
+});
+
+const toggleWindow = (name) => {
+  setOpenWindow(prev => ({
+    prev,
+    [name]: !prev[name] // alterna solo la ventana seleccionada
+  }));
+};
+
             return (
                     <div >
                         <div className ={feed["div__header--main"]}>
+                          <div className={feed["div__header"]}>
                             <header>WhiteHub</header>
+                          </div>  
                             <div className={feed["div__search--main"]} >
                                 <input className={feed.page_search} id="seach" name="search" type="search" /> 
                             </div>  
                       
                       <div className={feed["div__button"]} >
-                          <button className ={feed["button__settings"]} type="button">
+                          <button className ={feed["button__settings"]} type="button"
+                          onClick={() => toggleWindow("settings")}>
                               <img className ="img__settings" src={settingsIcon} alt=""  />
                               <span></span>
                           </button>
-                          <button className ={feed["button__notification"]} type="button">
+                          {openWindow.settings && <ButtonSetting/>}
+
+                          <button className ={feed["button__notification"]} type="button"
+                          onClick={() => toggleWindow("notifications")}>
                               <img className ={feed["img__notification"]} src={notificationIcon} alt="" />
                               <span></span>
                           </button>
-                          <button className ={feed["button__message"]} type="button">
+                          {openWindow.notifications && <ButtonNotification/>}
+
+                          <button className ={feed["button__message"]} type="button"
+                          onClick={() => toggleWindow("messages")}>
                               <img className ={feed["img__message"]} src={chatIcon} alt="" />
                               <span></span>
                           </button>
-                          <button className ={feed["button__user"]} type="button">
+                          {openWindow.messages && <ButtonMessage/>}
+
+                          <button className ={feed["button__user"]} type="button"
+                          onClick={() => toggleWindow("user")}>
                               <img className ={feed["img__user"]} src={userIcon} alt="" onError={(e) => (e.target.src = "/image/default-user.png")} />
                           </button>
+                          {openWindow.user && <ButtonUser/>}
                       </div>
                     </div>
                     
