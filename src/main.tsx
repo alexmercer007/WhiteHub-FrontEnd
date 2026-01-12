@@ -1,14 +1,10 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./App.css"; // <- Aquí Tailwind está incluido
 
-const root = document.getElementById('root')
-
-if (!root) throw new Error('Root element not found')
-
-createRoot(root).render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-)
-
+ReactDOM.createRoot(document.getElementById("root")!).render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+);

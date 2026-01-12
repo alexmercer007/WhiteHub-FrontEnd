@@ -19,12 +19,13 @@ import axios from "axios";
         e.preventDefault(); // 🔴 importantísimo
 
         try {
-            await axios.post("http://localhost:8080/login", {
+            const response = await axios.post("http://localhost:8080/login", {
                 email,
                 password
             });
 
             setErrorMsg(""); // login correcto
+            localStorage.setItem("token", response.data.token);
             navigate("/feed"); // 🔥 frontend
 
         } catch (error) {
